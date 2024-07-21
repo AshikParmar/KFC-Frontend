@@ -142,9 +142,8 @@ async function displayRazorpay() {
         
       },
       prefill: {
-          name: "parag jain",
-          email: "iesparagjain@gmail.com",
-          contact: "9770525851",
+          name: "ashik parmar",
+          email: "ashikparmar5123@gmail.com",
       },
       notes: {
           address: "VFC Bangalore",

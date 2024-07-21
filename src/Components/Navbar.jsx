@@ -70,7 +70,7 @@ const Navbar = () => {
   const [inp,setInp] = useState("")
   const [searchdata, setSearchData] = useState([])
   const { isAuth,email } = useSelector((state) => state.login);
-  const {  dispatch: parag } = useContext(CartContext);
+  const {  dispatch: cart } = useContext(CartContext);
 
   const navigate = useNavigate()
 
@@ -79,7 +79,7 @@ const Navbar = () => {
   },[isAuth, dispatch,email])
 
   const handleLogout = () => {
-     parag({type:"resetCart"})
+     cart({type:"resetCart"})
     dispatch(logout()).then(() => {
       toast({
         title: "User Logged out .",
