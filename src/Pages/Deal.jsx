@@ -30,7 +30,6 @@ const Deal = () => {
       .then((res) => {
         
         setDealData(res)
-          console.log(res)
         
       })
       .catch((err) => {

@@ -9,7 +9,6 @@ const SearchPage = () => {
   return (
       <Box pt={{ base: "10px", md: "100px" }}>
           <Grid
-        // pt={{base:"100px",md:"200px"}}
         alignItems="center"
         justifyContent="center"
         gridTemplateColumns={{

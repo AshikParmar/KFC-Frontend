@@ -5,7 +5,6 @@ import { useToast } from "@chakra-ui/react";
 function PrivateRoute({children}) {
     const toast = useToast()
     const {token} = useSelector(store=> store.login)
-    // const {authState} = useContext(AuthContext)
     if(!token){
         toast({
             title: 'Please Login First',

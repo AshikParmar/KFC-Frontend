@@ -5,7 +5,6 @@ import {
   Image,
   Text,
   Button,
-  VStack,
   Flex,
   Center,
   HStack,
@@ -19,7 +18,7 @@ import twitter from "../Assets/images/twitter.png"
 
 const Footer = () => {
   return (
-    // bahar ka single box
+   
     <Box bg="#202124" >
       <Grid
         p="6%"
@@ -40,7 +39,7 @@ const Footer = () => {
           />
         </GridItem>
         <GridItem w="100%" color="#fff">
-          <Text>KFC Food</Text>
+          <Text>VFC Food</Text>
           <Text>Menu</Text>
           <Text>Order Lookup</Text>
           <Text>Gift Card</Text>
@@ -104,7 +103,7 @@ const Footer = () => {
         <Box ></Box>
       <Box >
       <Center color="#fff">
-        Copyright © VFC Corporation 2022 All Rights Reserved
+        Copyright © VFC Corporation 2024 All Rights Reserved
       </Center>
       </Box>
       <Hide below="sm">

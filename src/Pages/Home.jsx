@@ -4,18 +4,13 @@ import {
   Flex,
   Grid,
   GridItem,
-  // Spacer,
   HStack,
   VStack,
   StackDivider,
-  // Show,
   Hide,
   Center,
   Heading,
   Text,
-  // Wrap,
-  // Stack,
-  // Input,
   Button,
   Stack,
   Tab,
@@ -24,8 +19,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-// import LocationOnIcon from "@mui/icons-material/LocationOn";
-// import AccessTimeIcon from "@mui/icons-material/AccessTime";
+
 import loader_gif from "../Assets/images/loader_gif.gif";
 import { Link, NavLink } from "react-router-dom";
 import PickUpLocaton from "../Components/PickUpLocaton";
@@ -60,7 +54,7 @@ const Home = () => {
     setIsError(false);
     browseCategoriesDataFromApi()
       .then((res) => {
-        // setIsLoading(false)
+       
         setCategoriesData(res);
       })
       .catch((err) => {
@@ -160,11 +154,10 @@ const Home = () => {
             <VerticalLine />
           </Box>
           <Box>
-            {/* <VStack> */}
+          
             <Heading fontWeight="bolder" as="h1" size="lg">
-              WELCOME TO KFC!
+              WELCOME TO VFC!
             </Heading>
-            {/* </VStack> */}
           </Box>
         </Box>
       </Hide>
@@ -194,23 +187,20 @@ const Home = () => {
         rowGap={10}
 
        
-        // width={{md:"80%"}}
       >
         {categoriesData?.map((item) => (
           <GridItem justifyContent="center" height="fit-content"   m="auto auto" borderRadius="8px" key={item.id} w="90%" boxShadow="base">
             <NavLink to={`/${item.cate}`}>
-            {/* <a href={`${item.cate}`}> */}
+      
               <Image w="100%" borderRadius="8px 8px 0 0"  src={item.image} />
               <Heading m="15px auto" size="sm">
                 {item.name}
               </Heading>
-              {/* </a> */}
+
             </NavLink>
           </GridItem>
         ))}
       </Grid>
-
-      {/* Browse Categories end */}
       <Box h="40px" ></Box>
     </>
   );

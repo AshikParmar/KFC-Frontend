@@ -27,11 +27,7 @@ const Cart = () => {
         className="checkout"
       >
         <Box m="auto" className="checkout__left">
-          {/* <img
-          className="checkout__add"
-          src="https://images.ctfassets.net/wtodlh47qxpt/Na9oR4t8WKmSjIuy5pg4U/2fef58b44c29bbb4341ed116bac84f44/KFC_Maggi__Banner__1440x396px__2_.jpg?w=988&fit=fill&fm=webp"
-          alt=""
-        /> */}
+         
           {state.basket.length === 0 ? (
             <Box
              

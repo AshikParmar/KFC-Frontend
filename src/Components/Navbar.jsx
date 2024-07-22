@@ -6,7 +6,6 @@ import {
   Flex,
   Grid,
   Spacer,
-  HStack,
   StackDivider,
   Show,
   Hide,
@@ -47,7 +46,6 @@ import {  Link,  useNavigate } from "react-router-dom";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
-// import { AuthContext } from "../Context/AuthContext/AuthContext";
 import { CartContext } from "../Context/CartContext/CartContext";
 
 import { logout } from "../Redux/LoginRedux/Login.Actions";
@@ -89,7 +87,7 @@ const Navbar = () => {
         position: "top-right",
         isClosable: true,
       });
-      // dispatch({type:"resetCart"})
+     
      
       return navigate("/login");
     });
@@ -124,12 +122,12 @@ const Navbar = () => {
   const handleLocationFunction = () => {
     onOpen();
   };
-  // const sizes = ["full"];
+
 // search function
   const handleSearch = (e) => {
     e.preventDefault()
     setInp(e.target.value)
-    // console.log("aaaaaaaagaye")
+
      const lg_gye = item?.filter((el) => {
          return ((el.description
 ).toLowerCase()).includes(inp.toLowerCase()) || ((el.name
@@ -142,12 +140,9 @@ const Navbar = () => {
       lg_gye
     }})
     
-  console.log(lg_gye)
-    // setInp("")
           
   }
 
-  console.log(searchdata)
 
   return (
     <>
@@ -234,10 +229,7 @@ const Navbar = () => {
                   </Link>
                 </Hide>
               </Show>
-              {/* for small size ... hamburger and all side drawer functionality */}
-              {/* hamburger start  */}
               <Show below="md">
-                {/* <Hide above="md"> */}
                   <Box>
                     <button onClick={() => handleClick(size)} key={size} m={4}>
                       {<HamburgerIcon boxSize="1.5em" />}
@@ -261,7 +253,7 @@ const Navbar = () => {
                               <Image bg="red" width="80px" src={vfc_logo} />
                             </Link>
                           </Box>
-                          {/* {`${size} drawer contents`} */}
+                       
                         </DrawerHeader>
                         <DrawerBody>
                           <Box>
@@ -352,26 +344,17 @@ const Navbar = () => {
                       </DrawerContent>
                     </Drawer>
                   </Box>
-                {/* </Hide> */}
+                
               </Show>
-              {/* hamburger end */}
             </Flex>
           </Box>
           <Spacer />
             <Box flexGrow={2} px="20px">
               <Box m="auto" alignItems="center" display="flex" position="sticky" top="160px" gap={1}><Input borderRadius="10px" size={{ xs: "xs", sm: "sm", md: "md", lg: "lg" }} borderColor="#e4002b" border="2px solid #e4002b" bg="white" value={inp}  focusBorderColor="#e4002b" onChange={ handleSearch}
             placeholder="search Here" />
-            {/* onMouseEnter={handleSearch} */}
-            {/* <Button bg="#e4002b" size={{xs:"xs",sm:"sm",md:"md",lg:"lg"}} 
-            _hover={{bg:"#e4002b",color:"white"}}  color="white" onClick={handleSearch}><Search2Icon/></Button> */}
+         
           </Box>
-            {/* <Show below="md">
-              <Hide above="md" below="sm">
-                <Link to="/">
-                  <Image width="100px" src={vfc_logo} />
-                </Link>
-              </Hide>
-            </Show> */}
+           
           </Box>
           <Spacer />
           <Box>

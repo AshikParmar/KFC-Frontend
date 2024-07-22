@@ -25,13 +25,10 @@ const SubTotal = () => {
   }
 
   console.log(amount)
-  // localStorage.setItem("subtotal", value)
+ 
   return (
     <Box position={{lg:"sticky",xl:"sticky"}} top={{lg:"50vh"}}  className="subtotal">
-      {/* price */}
-      {/* <CurrencyFormat */}
-        {/* renderText={(value) => ( */}
-         
+     
           <>
             <Heading m="10px auto" as="h4" size="md">
               Subtotal ({state.basket.length} items): <strong> {totalAmount}</strong>
@@ -40,7 +37,7 @@ const SubTotal = () => {
               <input type="checkbox" /> This order contains a gift.
             </small>
           </>
-        {/* // )}
+        {/*
         // decimalScale={2}
         // value={getBasketTotal(state.basket)}
         // // onChange={()=> setAmount(`${value}`)}
