@@ -83,7 +83,7 @@ const Navbar = () => {
         title: "User Logged out .",
         description: "Visit again",
         status: "success",
-        duration: 4000,
+        duration: 3000,
         position: "top-right",
         isClosable: true,
       });

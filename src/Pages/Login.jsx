@@ -64,7 +64,7 @@ const Login = () => {
           title: "Account Not Exist",
           description: "Please SignUp First",
           status: "info",
-          duration: 4000,
+          duration: 3000,
           position: "top-right",
           isClosable: true,
         });
@@ -74,7 +74,7 @@ const Login = () => {
           title: "Wrong Credentials",
           description: "Please enter correct details",
           status: "warning",
-          duration: 4000,
+          duration: 3000,
           position: "top-right",
           isClosable: true,
         });
@@ -83,7 +83,7 @@ const Login = () => {
           title: "User Logged in.",
           description: "Welcome to VFC",
           status: "success",
-          duration: 4000,
+          duration: 3000,
           position: "top-right",
           isClosable: true,
         });
@@ -93,7 +93,7 @@ const Login = () => {
           title: "Unexpected Error",
           description: "An unexpected error occurred.",
           status: "error",
-          duration: 4000,
+          duration: 3000,
           position: "top-right",
           isClosable: true,
         });
@@ -105,7 +105,7 @@ const Login = () => {
         title: "Error",
         description: error.message || "An unexpected error occurred.",
         status: "error",
-        duration: 4000,
+        duration: 3000,
         position: "top-right",
         isClosable: true,
       });

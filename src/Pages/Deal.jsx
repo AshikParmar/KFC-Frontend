@@ -77,7 +77,7 @@ const Deal = () => {
         {
           dealdata?.map((item)=>(
             <GridItem justifyContent="center"   m="auto auto" borderRadius="8px" key={item.id} w="90%" boxShadow="base">
-            <Link to="/menu" >
+            <Link to="/menu/hotDeals" >
               <Image src={item.images} w="100%" borderRadius="8px 8px 0 0"   />
               <Heading m="15px auto" size="sm">
                 {item.name}

@@ -15,7 +15,7 @@ const SingleCard = ({ id, images, name, type, price, description }) => {
       title: "Item added to cart",
       description: `${name} has been added to your cart.`,
       status: "success",
-      duration: 2000,
+      duration: 1000,
       isClosable: true,
       position: "top-right",
     });

@@ -14,7 +14,7 @@ const Cart = () => {
     console.log("basket data", state.basket);
   }, []);
   return (
-    <Box m="10% 10%">
+    <Box m="5% 10%">
       <Grid
         display={{
           base: "block",

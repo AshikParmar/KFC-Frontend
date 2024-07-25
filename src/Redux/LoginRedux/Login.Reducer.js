@@ -18,7 +18,7 @@ const initState = {
 };
 
 const LoginReducer = (state = initState, { type, payload }) => {
-  // console.log(payload);
+
   switch (type) {
     case LOGIN_SUCCESS: {
       if (payload.token) {

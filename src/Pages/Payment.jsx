@@ -159,7 +159,7 @@ async function displayRazorpay() {
 
 }
 
-// console.log(payMtd);
+
 
   return (
     <Box  margin="30px auto">
